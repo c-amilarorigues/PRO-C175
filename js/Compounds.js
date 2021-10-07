@@ -27,7 +27,7 @@ AFRAME.registerComponent("atoms", {
 
     var scene = document.querySelector("a-scene");
 
-    //add marker
+    //adicionar marcador
     var marker = document.createElement("a-marker");
 
     marker.setAttribute("id", `marker-${barcodeValue}`);
@@ -42,7 +42,7 @@ AFRAME.registerComponent("atoms", {
     atom.setAttribute("id", `${elementName}-${barcodeValue}`);
     marker.appendChild(atom);
 
-    //add atom card
+    //adicionar carta do atom
     var card = document.createElement("a-entity");
     card.setAttribute("id", `card-${elementName}`);
     card.setAttribute("geometry", {
@@ -59,7 +59,7 @@ AFRAME.registerComponent("atoms", {
 
     atom.appendChild(card);
 
-    //add nucleus
+    //adicionar núcleo
     var nucleusRadius = 0.2;
     var nucleus = document.createElement("a-entity");
 
@@ -158,7 +158,7 @@ AFRAME.registerComponent("atoms", {
       });
     }
 
-    // adding compounds
+    // adicionar de compostos
     var compounds = element.compounds;
     compounds.map(item => {
       var compound = document.createElement("a-entity");
